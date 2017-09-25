@@ -83,6 +83,11 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_string.capitalize!
         puts " #{holiday_string}:"
       end
+      array.each do |supply|
+        supply_string = supply.to_s
+        supply_string.capitalize!
+        puts "#{supply_string}"
+      end
     end
   end
 end
